@@ -8,6 +8,8 @@ public class PHealth : Health
     {
         base.Die();
         Debug.Log("Player died");
+        FindObjectOfType<GameManager>().GameOver();
     }
+
 }
 
